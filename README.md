@@ -1,2 +1,4 @@
 # personalWebsite
-Repositório criado para hospedar meu Website
+Repositório criado para hospedar meu Website. 
+
+Alguns ajustes
