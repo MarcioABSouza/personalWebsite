@@ -44,4 +44,11 @@ menuItens.forEach((item)=>{
     item.addEventListener('click', scrollToId)
 })
 
+var typed = new Typed('#forTyping', {
+    strings: ['ama criar', 'está sempre em evolução', 'resolve problemas'],
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: true ,
+
+  });
 

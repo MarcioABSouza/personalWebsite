@@ -62,9 +62,11 @@ section {
     justify-content: center;
 }
 
-.container{
+
+.container {
     text-align: center;
-    padding:  .8em 1.2em;
+    padding: 1.8em 1.2em;
+    margin-top: -1.7em;
 }
 
 header{
@@ -81,9 +83,9 @@ header{
 }
 
 
-section{
+/* section{
    
-}
+} */
 .computer{
     width: 50%;
     /* margin: 2em auto 2em 25%; */
@@ -151,7 +153,6 @@ h1, .subhead{
         border-radius: 50%;
         border: 10px solid #fff;
         transition: .6s;
-        margin: 0 150px;
 
 }
 
@@ -189,6 +190,7 @@ h2{
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 #whatiuse{
@@ -196,7 +198,6 @@ h2{
     text-align: center;
     color: #fff;
     background-color: var(--main-bg-color);
-    height: 60vh;
 }
 
 #whatiuse img{
@@ -378,9 +379,9 @@ blockquote{
         width: 20%;
     }
 
-    #home span{
+    /* #home span{
         
-    }
+    } */
 
     h1{
         font-size: 1.2em;
