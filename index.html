@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="" type="image/x-icon">
     <title>Marcio Souza</title>
 </head>
 <body>
+
+    <div id="preloader">
+        <h3 id="forTypingPreloader" class="main-color"></h3>
+    </div>
+
+
     <div id="main-container" class="container">
         <header>
-            <div class="logo"><h2 class="main-name">Marcio</h2><h2>Souza</h2>
+            <div class="logo"><h2 class="main-name">Marcio</h2><h2 class="middle-name">Souza</h2>
             </div>
             <nav >
                 <a class="hide-desktop"  href="#">
@@ -20,14 +26,14 @@
 
                 <ul  id="nav" class="show-desktop hide-mobile">
                     <li id="exit" class="exit-btn hide-desktop">X</li>
-                    <li><a href="#whathaveidone">Projetos</a></li>
-                    <li><a href="#whoami">Sobre</a></li>
-                    <li><a href="#contactme">Contato</a></li>
+                    <li><a href=".whatido">Projetos</a></li>
+                    <li><a href=".whythissite">Sobre</a></li>
+                    <li><a href="footer">Contato</a></li>
                 </ul>
             </nav>
         </header>
         <section id="home">  
-            <h1> <span class="main-color large">HEY</span>, <span style="font-size: 2em;">EU SOU O MARCIO</span> <span class="main-color"></span></h1>
+            <h1> <span class="main-color large">HEY</span>, <span>EU SOU MARCIO</span> <span class="main-color"></span></h1>
             <p class="subhead">
                 Entusiasta da programação e alguém que <span id="forTyping" class="main-color"></span>
             </p>
@@ -37,84 +43,73 @@
         </section>
     </div>
 
-    <div class="colored-container" id="whoami">
-        <div class="container">
-            <ul>
-                <li>
-                    <img class="marcio-photo" src="./images/marcio.jpg" alt="Marcio">
-                    </li>
-                <li>
-                    <h3>QUEM SOU EU?</h3>
-                    <p>Tenho 28 anos e uma aspiração louca por criar coisas, desenhar interfaces, escrever algorítimos, ajudar pessoas a resolver problemas.</p>
-                </li>
-               
-            </ul>
+    <div class="whythissite">
+        <div class="text-box">
+            <h6>Quem sou e o porque deste site</h6>
+            <h1>Quero registrar o que tenho criado, quais estratégias tenho adotado para desenvolver aplicações</h1>
         </div>
     </div>
 
-    <div class="another-colored" id="whathaveidone">
-        <div class="container">
-            <h3>O QUE TENHO FEITO.</h3>
-            <ul>
-                <li>
-                    <figure>
-                        <img src="./images/bethehero.png" alt="be the hero">
-                        <blockquote>Aplicação Web e Aplicativo Mobile criados para que ONGs encontrem auxílio financeiro nos seus projetos.</blockquote>
-                       <a href="https://github.com/MarcioBugado/beTheHero" target="blank"> <figcaption>Be The Hero</figcaption> </a>
-                    </figure>
-                </li>
+    <div class="whatido">
+        <div class="main-box">
+            <div class="text-box">
+            <h6>O QUE EU FAÇO</h6>
+            <h3>Crio aplicações web e aplicativos mobile que sejam interessantes e que possam engrandecer o meu conhecimento.</h3>
+            </div>
+            <div class="images-box">
+                
+                <a href="https://odd-chat.herokuapp.com/" target="blank">
+                    <img src="images/oddChatt.png" alt="Projeto Chat">
+                        <button>
+                            <h3>OddChat</h3>
+                            <h6>Projeto em Node e Socke.IO</h6>
+                        </button> 
+                </a>
 
-                <li>
-                    <figure>
-                        <img src="./images/cidades.png" alt="Caos">
-                        <blockquote>Aplicação Web para gerenciamento de cidades e informações climáticas das mesmas.</blockquote>
-                        <a href="https://github.com/MarcioBugado/Caos" target="blank"> <figcaption>Caos</figcaption></a>
-                    </figure>
-                </li>
+                <a href="https://marciobugado.github.io/Caos/" target="blank"><img src="images/Caos_.png" alt="Projeto Caos">
+                    <button>
+                        <h3>Caos</h3>
+                        <h6>Projeto Frontend em JS</h6>
+                    </button> 
+                </a>
 
-            </ul>
+                <a href="https://be-theherofrontend.herokuapp.com/" target="blank"><img src="images/Be.png" alt="Projeto Be the Hero">
+                    <button>
+                        <h3>Be The Hero</h3>
+                        <h6>Aplicação Frontend em React</h6>
+                    </button> 
+                </a>
+            </div>
         </div>
     </div>
 
-    <div id="whatiuse">
-        <h3>TECNOLOGIAS QUE USO NOS PROJETOS</h3>
-        <ul>
-            <li><img src="./images/react.png" alt=""><h4>React</h4></li>
-            <li><img src="./images/node.png" alt=""><h4>Node JS</h4></li>
-            <li><img src="./images/javascript.png" alt=""><h4>Javascript</h4></li>
-            <li><img src="./images/html.png" alt=""><h4>HTML 5</h4></li>
-            <li><img src="./images/css.png" alt=""><h4>CSS 3</h4></li>
-        </ul>
-    </div>
-
-    <div class="container" id="contactme">
-        <h3>VOCÊ TEM UMA IDEIA?</h3>
+    <footer class="foot">
+        <div>
+            <h3>Quem é Marcio</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor blanditiis neque iste saepe tempore? Optio ratione earum repellendus corporis 
+            nulla perspiciatis ducimus mollitia temporibus quo, animi quis facere dicta amet.</p>
+        </div>
         
-        <a href="https://api.whatsapp.com/send?phone=5553984595521" 
-        target="_blank" class="ctm"> Whatsapp</a>
-        <h3>Então entre em contato comigo!</h3>
-        <ul class="social">
-            <li><a href="https://www.facebook.com/marciorocksouza/" target="blank"><img src="./images/face.svg" alt="Facebook"></a></li>
-            <li><a href="https://www.linkedin.com/in/marcio-souza-0431bb105/" target="blank"><img src="./images/linkedin.svg" alt="Linkedin"></a></li>
-            <li><a href="https://github.com/MarcioBugado" target="blank"><img src="./images/git.svg" alt="Github"></a></li>
- 
-        </ul>
-    </div>
-
-    <a href="https://api.whatsapp.com/send?phone=55###########" 
-       target="_blank">
-
-
-    <footer>
-        <div class="footer-container">
-            <div class="container">
-
-               <img src="./images/favicon.png" alt=""> <p class="address">Você pode inclusive me mandar um e-mail - marciosouzaprofissional@gmail.com </p>
-
+        <div>
+            <h3>Onde Estou?</h3>
+            <p>Paulo de Frontin, 73</p>
+            <p>Rio Grande - RS</p>
+            <p>marciosouzaprofissional@gmail.com</p>
+        </div>
+        
+        <div>
+            <h3>Me acompanhe aqui!</h3>
+            <div class="social-box">
+            <a href="https://www.facebook.com/marciorocksouza/" target="blank"><img src="images/facebook.svg" alt="facebook"></a>
+            <a href="https://www.linkedin.com/in/marcio-souza-0431bb105/" target="blank"><img src="images/linkedin.svg" alt="" target="blank"></a>
+            <a href="https://github.com/MarcioBugado" target="blank"><img src="images/git.svg" alt="" target="blank"></a>
             </div>
         </div>
     </footer>
-    <div id="foot"></div>
+    <div class="final-line">
+        <h6>Todos os direitos reservados </h6><p>|</p><h6>Marcio Souza</h6>
+    </div>
+   
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="script.js"></script>
 </body>

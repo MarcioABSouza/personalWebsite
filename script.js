@@ -2,7 +2,17 @@ const menu = document.querySelector("#menu")
 const nav = document.querySelector("#nav")
 const exit = document.querySelector("#exit")
 const scroll = document.querySelector('.scroll')
+const preloader = document.querySelector('#preloader')
 
+//PRELOADER
+
+window.addEventListener('load', ()=>{
+    preloader.style.opacity = 0;
+    typed2.pause.status = true;
+    
+})
+
+//NAVBAR
 
 let menuItens = document.querySelectorAll('#nav a ');
 
@@ -26,6 +36,8 @@ exit.addEventListener('click', (e)=>{
 } )
 
 
+//SCROLL
+
 function scrollToId(event){
 
     event.preventDefault()
@@ -44,6 +56,9 @@ menuItens.forEach((item)=>{
     item.addEventListener('click', scrollToId)
 })
 
+
+//TYPED
+
 var typed = new Typed('#forTyping', {
     strings: ['ama criar', 'está sempre em evolução', 'resolve problemas'],
     typeSpeed: 100,
@@ -51,4 +66,14 @@ var typed = new Typed('#forTyping', {
     loop: true ,
 
   });
+
+var typed2 = new Typed('#forTypingPreloader', {
+    strings: ['...'],
+    typeSpeed: 10,
+    backSpeed: 10,
+    loop: true ,
+
+  });
+
+
 
