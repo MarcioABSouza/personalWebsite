@@ -101,7 +101,7 @@
 
 .images-box img{
     max-width: 100%;
-    height: 400px;
+    height: 250px;
     
 }
 
@@ -250,12 +250,31 @@ nav ul li a{
 .foot {
     display: flex;
     justify-content: space-between;
-    /* height: 60vh; */
     align-items: flex-start;
-    padding: 7% 10%;
     flex-direction: column;
-    align-items: center;
+
 }
+
+.whoami{
+    display: flex;
+    justify-content: center;
+}
+
+whoami-main{
+    width: 81%;
+}
+
+svg{
+    display: none;
+}
+
+.whoami-text {
+    display: flex;
+    flex-direction: column;
+    word-break: break-word;
+    width: 70%;
+}
+
 
 .foot div{
     display: flex;
@@ -272,6 +291,7 @@ nav ul li a{
     display: flex;
     padding: 20px 0;
     flex-direction: row;
+    justify-content: center;
 }
 
 .foot .social-box img{
@@ -302,7 +322,7 @@ nav ul li a{
  .final-line {
     display: flex;
     justify-content: flex-end;
-    height: 14vh;
+    height: 7vh;
     background-color: var(--dark-light);
     color: var(--white);
     flex-direction: column;
@@ -312,6 +332,11 @@ nav ul li a{
 .final-line h6{
     color: var(--white);
     margin: 2px;
+}
+
+
+.final-line p{
+    display: none;
 }
 
 
@@ -410,8 +435,6 @@ nav ul li a{
     
     transition: .3s;
     position: relative;
-    width: 400px;
-    height: 400px;
     margin-right: 15px;
 
 
@@ -511,6 +534,68 @@ nav ul li a{
         display: none;
     }
 
+
+    .whoami{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+
+
+
+    .whoami-main{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        position: relative;
+    }
+
+    svg{
+        height: 600px;
+    }
+
+    .animateLeftRight{
+        animation: leftRight 1.5s ease-in-out;
+        animation-fill-mode: both;
+        animation-delay: 2s;
+    }
+
+    .animateUpDown{
+        animation: upDown .5s ease-in-out infinite alternate;   
+    
+    }
+
+     .whoami-text{
+        position: absolute;
+        width: 40%;
+        left: 26%;
+    }
+
+   
+    @keyframes leftRight {
+        from{
+            opacity: 0;
+            transform: translateX(0);
+        }
+        to{transform: translateX(500px);
+            opacity: 1;}
+    }
+
+    @keyframes upDown {
+        from{
+        
+            transform: translateY(0);
+        }
+        to{transform: translateY(10px);
+         }
+           
+    }
+
     .foot{
         display: flex;
         justify-content: space-between;
@@ -551,12 +636,12 @@ nav ul li a{
         justify-content: center;
         height: 12vh;
         background-color: var(--dark-light);
-        color: var(--white);
+        color: var(--main-bg-color);
         align-items: center;
         flex-direction: row;
     }
 
-    .final-line h6{
+    .final-line:first-child {
         color: var(--white);
     }
 

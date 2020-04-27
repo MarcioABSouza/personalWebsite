@@ -3,11 +3,13 @@ const nav = document.querySelector("#nav")
 const exit = document.querySelector("#exit")
 const scroll = document.querySelector('.scroll')
 const preloader = document.querySelector('#preloader')
+const phone = document.querySelector('#Phone')
 
 //PRELOADER
 
 window.addEventListener('load', ()=>{
     preloader.style.opacity = 0;
+     preloader.style.display = 'none';
     typed2.pause.status = true;
     
 })
@@ -75,5 +77,6 @@ var typed2 = new Typed('#forTypingPreloader', {
 
   });
 
+  //ANIMATION
 
 
