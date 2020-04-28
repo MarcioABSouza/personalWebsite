@@ -4,6 +4,7 @@ const exit = document.querySelector("#exit")
 const scroll = document.querySelector('.scroll')
 const preloader = document.querySelector('#preloader')
 const phone = document.querySelector('#Phone')
+// const buttonToTop = document.querySelector("#myBtn");
 
 //PRELOADER
 
@@ -62,21 +63,67 @@ menuItens.forEach((item)=>{
 //TYPED
 
 var typed = new Typed('#forTyping', {
-    strings: ['ama criar', 'está sempre em evolução', 'resolve problemas'],
-    typeSpeed: 100,
+    strings: [
+        'semi-nerd. ',
+        'fã do Torvalds.',
+        'entusiasta da programação.'],
+    typeSpeed: 50,
     backSpeed: 50,
-    loop: true ,
+    smartBackspace: true, // this is a default
+    loop: true, 
+    showCursor: false,
 
   });
 
 var typed2 = new Typed('#forTypingPreloader', {
-    strings: ['...'],
+    strings: ['.','..','...'],
     typeSpeed: 10,
     backSpeed: 10,
     loop: true ,
+    showCursor: false,
 
   });
 
-  //ANIMATION
+  //SCROLL UP DOWN
+//   let isRunning = false
+
+//   window.onwheel = function(event) {
+    
+//      if(isRunning){
+//          return
+//      } 
+
+//     this.setTimeout(()=>{
+       
+//         if (event.deltaY > 0) {
+//             window.scrollTo(0, (window.scrollY + window.innerHeight))
+//             console.log('here')
+//             isRunning = false
+//         } else {
+//             window.scrollTo(0, (window.scrollY - window.innerHeight))
+//             isRunning = false
+//         }
+
+//     }, 1500) 
+    
+//   }
 
 
+
+
+
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+//     buttonToTop.style.display = "block";
+//   } else {
+//     buttonToTop.style.display = "none";
+//   }
+// }
+
+// t
+// function topFunction() {
+//   document.body.scrollTop = 0; 
+//   document.documentElement.scrollTop = 0; 
+// }

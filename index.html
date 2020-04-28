@@ -8,14 +8,14 @@
     <link rel="shortcut icon" href="/images/old.png" type="image/x-icon">
     <title>Marcio Souza</title>
 </head>
-<body>
+<body class="roll">
 
     <div id="preloader">
         <h3 id="forTypingPreloader" class="main-color"></h3>
     </div>
 
 
-    <div id="main-container" class="container">
+    <div id="main-container" class="">
         <header>
             <div class="logo"><h2 class="main-name">Marcio</h2><h2 class="middle-name">Souza</h2>
             </div>
@@ -33,10 +33,15 @@
             </nav>
         </header>
         <section id="home">  
-            <h1> <span class="main-color large">HEY</span>, <span>EU SOU MARCIO</span> <span class="main-color"></span></h1>
-            <p class="subhead">
-                Entusiasta da programação e alguém que <span id="forTyping" class="main-color"></span>
-            </p>
+            
+            <span id="firstsentence" class="large">HEY!</span>
+            
+            <div class="typed-box">
+            <span id="secondsentence">Sou o Marcio,</span>
+            <span class="forTyping" id="forTyping"></span>
+            </div>
+           
+    
 
             <img src="./images/seta-para-baixo.svg" alt="scroll down" class="scroll">
 
@@ -45,8 +50,8 @@
 
     <div class="whythissite">
         <div class="text-box">
-            <h6>Quem sou e o porque deste site</h6>
-            <h1>Quero registrar o que tenho criado, quais estratégias tenho adotado para desenvolver aplicações</h1>
+            <h6>PORQUE DESSE SITE?</h6>
+            <h1>Este espaço existe pra que eu possa expor tudo o que tenho criado com código atualmente, seja um aplicativo, seja um simples site.</h1>
         </div>
     </div>
 
@@ -73,11 +78,11 @@
                     </button> 
                 </a>
 
-                <a href="https://be-theherofrontend.herokuapp.com/" target="blank"><img src="images/Be.png" alt="Projeto Be the Hero">
+                 <a href="https://be-theherofrontend.herokuapp.com/" target="blank"><img src="images/Be.png" alt="Projeto Be the Hero">
                     <button>
                         <h3>Be The Hero</h3>
                         <h6>Aplicação Frontend em React</h6>
-                    </button> 
+                     </button>
                 </a>
             </div>
         </div>
@@ -88,7 +93,7 @@
         <div class="whoami-main">
             <div class="whoami-text">
                 <h6 class="main-color">Mas quem sou eu afinal?</h6>
-                <h1>Alguém com 28 anos, localizado em Rio Grande e que ama Programação</h1>
+                <h1>Entusiasta da programação e alguém que simplesmente ama e precisa criar coisas.</h1>
             </div>
             <svg width="1406" height="737" viewBox="0 0 1406 737" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="1406" height="737" fill="#fff"/>
@@ -144,19 +149,26 @@
     </div>
 
     <footer class="foot">
+
+        <div class="">
+            <h6 class="main-color">Tem uma ideia?</h6>
+            <h1>Voce pode facilmente me encontrar nas redes sociais ou por e-mail.</h1>
+        </div>
         <div>
+            <h3>E-mail</h3>
+            <p id="email" class="main-color">marciosouzaprofissional@gmail.com</p>
+
+        </div>
+        
+        <div>
+            <h3>Endereço</h3>
+            <p>Paulo de Frontin, 73</p>
+            <p>Rio Grande - RS</p>
            
         </div>
         
         <div>
-            <h3>Onde Estou?</h3>
-            <p>Paulo de Frontin, 73</p>
-            <p>Rio Grande - RS</p>
-            <p class="main-color">marciosouzaprofissional@gmail.com</p>
-        </div>
-        
-        <div>
-            <h3>Me acompanhe aqui!</h3>
+            <h3>Social</h3>
             <div class="social-box">
             <a href="https://www.facebook.com/marciorocksouza/" target="blank"><img src="images/facebook.svg" alt="facebook"></a>
             <a href="https://www.linkedin.com/in/marcio-souza-0431bb105/" target="blank"><img src="images/linkedin.svg" alt="" target="blank"></a>
@@ -165,11 +177,21 @@
         </div>
     </footer>
     <div class="final-line">
-        <h6>Todos os direitos reservados </h6><p>|</p><h6 class="main-color">Marcio Souza</h6>
+        <h6>Todos os direitos reservados </h6><p>|</p><h6 id="rights">Marcio Souza</h6>
     </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      
+    </button>
    
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="script.js"></script>
+
+
+
+   
+
+
 </body>
 
 </html>
