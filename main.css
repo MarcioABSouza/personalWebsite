@@ -4,6 +4,7 @@
     --dark-light: #1a1a1a;
     --white: #f5f7f8;
     --text: #111111;
+    --text-colored: #ff6161;
   }
 
   *{
@@ -303,9 +304,10 @@ nav ul li a{
 
 .foot {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: end;
     flex-direction: column;
+    height: 93vh;
 
 }
 
@@ -317,6 +319,16 @@ nav ul li a{
     align-items: center;
     padding: 0 5%;
     height: 100vh;
+    background-color: var(--dark-light);
+    color: #fff;
+}
+
+.whoami h1{
+    color: var(--white);
+}
+
+.whoami h6{
+    color: var(--text-colored);
 }
 
 .whoami-main{
@@ -334,21 +346,29 @@ svg{
     width: 100%;
 }
 
-.foot{
-    height: 93vh;
-}
 
 
 .foot div{
     display: flex;
     flex-direction: column;
-    padding: 9px 10px;
+    padding: 2em 1em;
 
 }
+.haveanidea{
+width: 100%;
+word-break: break-word;
+ }
 
-.foot img{
-    width: 30px;
-    margin-right: 1em;
+.foot a {
+    width: 1em;
+    font-size: 1.4em;
+    color: #fff;
+    padding-right: 2em;
+    transition: ease-in-out .2s;
+}
+
+.foot a:hover{
+    color: var(--text-colored);
 }
 
 .foot .social-box{
@@ -418,6 +438,19 @@ svg{
     color: var(--white);
     border: 1px solid var(--main-bg-color);
     background-color: var(--main-bg-color);
+}
+
+.foot div.endereco-social{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--dark-light);
+    color: var(--white);
+    justify-content: space-around;
+}
+
+.foot div.endereco-social h3{
+    color: var(--text-colored);
 }
 
 
@@ -620,9 +653,13 @@ svg{
         display: flex;
         align-items: center;
         justify-content: end;
+        background-color: #fff;
+       
     }
 
-
+    .whoami h1{
+        color: black;
+    }
 
 
     .whoami-main{
@@ -680,24 +717,22 @@ svg{
         display: flex;
         justify-content: space-between;
         height: 90vh;
-        align-items: center;
-        flex-direction: row;
-        padding: 7% 2%;
+        align-items: end;
+        flex-direction: column;
+        padding: 4% 10%;
 
     }
 
     
 
     .foot div{
-        width: 20%;
+        width: 50%;
         display: flex;
         flex-direction: column;
 
     }
 
-    .foot img{
-        width: 30px;
-    }
+    
 
     .foot .social-box{
         display: flex;
@@ -733,9 +768,34 @@ svg{
         font-size: 1.5em;
     }
 
+
+    .foot a {
+        width: 1em;
+        font-size: 2.4em;
+        color: black;
+        padding-right: 2em;
+        transition: ease-in-out .2s;
+    }
+    
+    .foot a:hover{
+        color: var(--main-bg-color);
+    }
+
     #email{
         font-size: 1em;
     }
+
+    .foot div.endereco-social{
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        color: black;
+    }
+
+
+.foot div.endereco-social h3{
+    color: var(--dark-light);
+}
 
     .final-line {
         display: flex;

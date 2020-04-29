@@ -84,6 +84,18 @@ var typed2 = new Typed('#forTypingPreloader', {
 
   });
 
+
+  var typed3 = new Typed('#findme', {
+    strings: ['no Facebook.','no Github.','no Linkedin.','no email <span class="main-color">marciosouzaprofissional@gmail.com</span>'],
+    typeSpeed: 50,
+    backSpeed: 50,
+    backDelay: 1000,
+    loop: true ,
+    showCursor: false,
+    
+
+  });
+
   //SCROLL UP DOWN
 //   let isRunning = false
 
