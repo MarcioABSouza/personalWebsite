@@ -21,7 +21,6 @@ let menuItens = document.querySelectorAll('#nav a ');
 
 scroll.addEventListener('click', () =>{
     
-    console.log('hey')
     window.scroll({
         top: 690,
         behavior: 'smooth'
@@ -48,6 +47,9 @@ function scrollToId(event){
     const id = element.getAttribute('href')
     const to = document.querySelector(id).offsetTop;
     
+
+   
+
     window.scroll({
         top: to, 
         behavior: 'smooth'

@@ -25,6 +25,8 @@
       
   }
 
+
+
   
   body::-webkit-scrollbar { 
     display: none; 
@@ -171,6 +173,10 @@
   .main-color{
       color: var(--main-bg-color);
   }
+
+  .second-color{
+    color: var(--text-colored);
+}
   
   .large{
       font-size: 3.3em;
@@ -563,8 +569,13 @@ word-break: break-word;
     width: 100%;
 }
 
+.images-box a button h3{
+    font-weight: 500;
+}
+
 .images-box a button:hover{
-    opacity : .8;
+    opacity : 1;
+    box-shadow: 18px 17px 20px -20px;
 }
 .main-box{
       width: 100%;
