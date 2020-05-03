@@ -110,7 +110,7 @@ var typed2 = new Typed('#forTypingPreloader', {
     strings: [
         
               ' facilmente me chamar no <span class="main-color">Facebook</span>.',
-              ' ver os códigos dos progetos no <span class="main-color">Github</span>.',
+              ' ver os códigos dos projetos no <span class="main-color">Github</span>.',
               ' me enviar uma mensagem no  <span class="main-color">Whatsapp</span>.',
               ' dar uma olhada no meu perfil no  <span class="main-color">Linkedin</span>.',
               ' ou me enviar um email em <span class="main-color">marciosouzaprofissional@gmail.com</span>'],
