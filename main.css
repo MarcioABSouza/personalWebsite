@@ -32,6 +32,33 @@
     display: none; 
 }
 
+
+#myBtn{
+    opacity: 0;
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #252525;
+    color: var(--white);
+    cursor: pointer;
+    padding: 4px;
+    font-size: 19px;
+    transition: .3s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+  
+  #myBtn:hover {
+
+    color: var(--white);
+
+  }
+
+
   #preloader {
     display: flex;
     justify-content: center;
@@ -45,7 +72,7 @@
     opacity: 1;
     background-color: white;
     z-index: 999;
-    transition: 1.5s;
+    transition: 2.5s;
 }
 
 #preloader h3{
@@ -89,10 +116,69 @@
     flex-direction: column;
 }
 
+.mainTextBox{
+    padding-left: 10em;
+}
+
 .whythissite{
     height: 100vh;
     padding: 10% 5%;
     text-align: left;
+}
+
+
+.whythissite-odd{
+    height: 100vh;
+    padding: 10% 5%;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.whythissite-caos{
+    height: 100vh;
+    padding: 10% 5%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--dark-light);
+}
+
+.whythissite-caos .textIconCode h2{
+    color: #252525;
+
+ }
+
+.whythissite-hero{
+    height: 100vh;
+    padding: 10% 5%;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+.textIconCode{
+    width: 40%;
+    text-align: center;
+    align-self: center;
+}
+
+.textIconCode h2{
+    color: #e0e0e0;
+    font-size: 15em;
+}
+
+
+
+
+.whythissite-caos h6{
+    color: var(--text-colored)
+}
+
+
+.whythissite-caos h1{
+    color: var(--white);
 }
 
 .whatido{
@@ -108,6 +194,10 @@
 
 .text-box{
     width: 100%;
+}
+
+.text-box h1 {
+    font-size: 1.8em;
 }
 
 .images-box{
@@ -207,13 +297,14 @@ ul{
     padding: 5% 5%;
     position: relative;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .heroWalking {
     position: absolute;
     top: 0;
     right: -392px;
     height: 100%;
-    z-index: 999;
+    z-index: -3;
 }
 
 section {
@@ -363,13 +454,14 @@ svg{
 }
 
 
-
-.foot div{
+.foot div {
     display: flex;
     flex-direction: column;
-    padding: 2em 1em;
+    padding: 1em 1em;
+    align-items: center;
+ }
 
-}
+
 .haveanidea{
 width: 100%;
 word-break: break-word;
@@ -379,7 +471,7 @@ word-break: break-word;
     width: 1em;
     font-size: 1.4em;
     color: #fff;
-    padding-right: 2em;
+    padding: 0 1.2em;
     transition: ease-in-out .2s;
 }
 
@@ -424,6 +516,7 @@ word-break: break-word;
     color: var(--white);
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1.6em;
 
 }
 
@@ -459,7 +552,7 @@ word-break: break-word;
 .foot div.endereco-social{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: var(--dark-light);
     color: var(--white);
     justify-content: space-around;
@@ -468,7 +561,53 @@ word-break: break-word;
 .foot div.endereco-social h3{
     color: var(--text-colored);
 }
+/*========================================================================================================
+================================================================================================================
+===============================*/
 
+
+
+
+@media only screen and (max-width: 1024px){
+
+    .text-box{
+        width: 100%;
+    }
+
+    .text-box h1{
+        font-size: 1.3em;
+    }
+
+    .mainTextBox{
+        padding-left: 0;
+    }
+
+
+    .textIconCode{
+        width: 100%;
+    }
+
+    .textIconCode h2{
+        font-size: 9em;
+    }
+
+    .whythissite-odd{
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0% 5%;
+    }
+    .whythissite-hero{
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0% 5%;
+    }
+    .whythissite-caos{
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0% 5%;
+    }
+
+}
 
 /*MEDIA QUERIES ===========================================
 ========================================================== ===================================================
@@ -480,6 +619,9 @@ word-break: break-word;
 @media only screen and (min-width: 650px){
 
     
+    .text-box h1{
+        font-size: 1.8em;
+    }
 
     p{
         font-size: 1.2em;
@@ -542,9 +684,6 @@ word-break: break-word;
       text-align: left; 
   }
   
-  .text-box{
-      width: 66%;
-  }
   
   .images-box{
       display: flex;
@@ -710,8 +849,12 @@ word-break: break-word;
 
      .whoami-text{
         position: absolute;
-        width: 40%;
-        left: 26%;
+        width: 60%;
+        left: 6%;
+    }
+
+    #Phone, #Text{
+        opacity: 0;
     }
 
    
@@ -747,7 +890,7 @@ word-break: break-word;
     
 
     .foot div{
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         height: 39vh;
@@ -828,44 +971,37 @@ word-break: break-word;
         align-items: center;
         flex-direction: row;
         padding: 1em;
+        margin-bottom: 0;
     }
 
     .final-line:first-child {
         color: var(--white);
     }
 
-
-
-
-
-
-
-
-
-
     #myBtn {
-        display: none;
-        position: fixed;
-        bottom: 73px;
-        right: 30px;
-        z-index: 99;
-        border: none;
-        outline: none;
-        background-color: white;
-        color: black;
-        cursor: pointer;
-        padding: 7px 14px;
-        border-radius: 2px;
-        font-size: 17px;
-        border: 1px solid black;
-        transition: .3s;
-      }
-      
-      #myBtn:hover {
-        background-color: var(--main-bg-color);
-        color: var(--white);
-        border: none;
-      }
+        opacity: 0;
+    display: block;
+    position: fixed;
+    bottom: 6px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #63636382;
+    color: var(--white);
+    cursor: pointer;
+    padding: 1px 7px;
+    border-radius: 2px;
+    font-size: 17px;
+    transition: .3s;
+    width: auto;
+}
+    }
+
+
+
+   
+
 
 
 

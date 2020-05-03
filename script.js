@@ -4,14 +4,23 @@ const exit = document.querySelector("#exit")
 const scroll = document.querySelector('.scroll')
 const preloader = document.querySelector('#preloader')
 const phone = document.querySelector('#Phone')
-// const buttonToTop = document.querySelector("#myBtn");
+const phoneText = document.querySelector('#Text')
+const whoami = document.querySelector('.whoami')
+const toTop = document.getElementById("myBtn");
 
 //PRELOADER
 
 window.addEventListener('load', ()=>{
-    preloader.style.opacity = 0;
-     preloader.style.display = 'none';
-    typed2.pause.status = true;
+    setTimeout(()=>{
+        preloader.style.opacity = 0;
+       
+        typed2.pause.status = true;
+    },2000)
+
+    setTimeout(()=>{
+        preloader.style.display = 'none';
+    },3000)
+    
     
 })
 
@@ -25,6 +34,7 @@ scroll.addEventListener('click', () =>{
         top: 690,
         behavior: 'smooth'
     })
+    
 })
 
 menu.addEventListener('click', function(e) {
@@ -37,6 +47,14 @@ exit.addEventListener('click', (e)=>{
     e.preventDefault()
 } )
 
+
+//PHONE ANIMATION
+
+whoami.addEventListener('mouseover', ()=>{
+    phone.classList.add('animateLeftRight')
+    setTimeout(()=>{phoneText.classList.add('animateLeftRight')},500)
+    
+})
 
 //SCROLL
 
@@ -54,10 +72,11 @@ function scrollToId(event){
         top: to, 
         behavior: 'smooth'
     })
+
+    nav.classList.toggle('hide-mobile')
 }
 
 menuItens.forEach((item)=>{
-    console.log(item)
     item.addEventListener('click', scrollToId)
 })
 
@@ -88,13 +107,40 @@ var typed2 = new Typed('#forTypingPreloader', {
 
 
   var typed3 = new Typed('#findme', {
-    strings: ['no Facebook.','no Github.','no Linkedin.','no email <span class="main-color">marciosouzaprofissional@gmail.com</span>'],
-    typeSpeed: 50,
-    backSpeed: 50,
-    backDelay: 1000,
+    strings: [
+        
+              ' facilmente me chamar no <span class="main-color">Facebook</span>.',
+              ' ver os códigos dos progetos no <span class="main-color">Github</span>.',
+              ' me enviar uma mensagem no  <span class="main-color">Whatsapp</span>.',
+              ' dar uma olhada no meu perfil no  <span class="main-color">Linkedin</span>.',
+              ' ou me enviar um email em <span class="main-color">marciosouzaprofissional@gmail.com</span>'],
+
+    typeSpeed: 10,
+    backSpeed: 10,
+    backDelay: 1500,
     loop: true ,
     showCursor: false,
     
 
   });
 
+//SCROLL TO TOP
+
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    toTop.style.opacity = 1;
+  } else {
+    toTop.style.opacity = 0;
+  }
+}
+
+function topFunction() {
+    window.scroll({
+        top: 0,
+        behavior: 'smooth'
+    })
+}
