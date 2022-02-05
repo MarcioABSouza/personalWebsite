@@ -7,31 +7,38 @@ const phone = document.querySelector("#Phone");
 const phoneText = document.querySelector("#Text");
 const whoami = document.querySelector(".whoami");
 const toTop = document.getElementById("myBtn");
+const load = document.getElementById("myBtn");
+
 
 //PRELOADER
+if(preloader){
+    window.addEventListener("load", () => {
+        setTimeout(() => {
+          preloader.style.opacity = 0;
+      
+          typed2.pause.status = true;
+        }, 500);
+      
+        setTimeout(() => {
+          preloader.style.display = "none";
+        }, 1000);
+      });
+}
 
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    preloader.style.opacity = 0;
-
-    typed2.pause.status = true;
-  }, 2000);
-
-  setTimeout(() => {
-    preloader.style.display = "none";
-  }, 3000);
-});
 
 //NAVBAR
 
-let menuItens = document.querySelectorAll("#nav a ");
+let menuItens = document.querySelectorAll(".useScrollToSection");
 
-scroll.addEventListener("click", () => {
-  window.scroll({
-    top: 690,
-    behavior: "smooth",
-  });
-});
+if(scroll){
+    scroll.addEventListener("click", () => {
+        window.scroll({
+          top: 690,
+          behavior: "smooth",
+        });
+      });
+}
+
 
 menu.addEventListener("click", function (e) {
   nav.classList.toggle("hide-mobile");

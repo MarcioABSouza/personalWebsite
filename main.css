@@ -383,13 +383,7 @@ nav ul li a {
   align-items: center;
 }
 
-.foot {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  flex-direction: column;
-  height: 93vh;
-}
+
 
 .whoami {
   display: flex;
@@ -422,6 +416,23 @@ svg {
   flex-direction: column;
   word-break: break-word;
   width: 100%;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-direction: column;
+  height: 93vh;
+}
+
+#curriculum-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-direction: column;
+  height: inherit;
+  padding: 0;
 }
 
 .foot div {
@@ -521,6 +532,7 @@ svg {
 .foot div.endereco-social h3 {
   color: var(--text-colored);
 }
+
 /*========================================================================================================
 ================================================================================================================
 ===============================*/
@@ -917,4 +929,23 @@ svg {
     transition: 0.3s;
     width: auto;
   }
+}
+
+
+/* HIRE-ME*/
+
+
+.curriculum {
+  height: fit-content;
+  padding: 3% 10%;
+  text-align: left;
+}
+
+.img-curriculum {
+  padding-top: 2em;
+  width: inherit;
+}
+
+.header-curriculum {
+  padding: 1% 5%;
 }
