@@ -74,7 +74,8 @@ h1 {
   color: var(--text);
   font-size: 1.3em;
   line-height: 1.18em;
-  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
 }
 
 h3 {
@@ -176,6 +177,8 @@ h6 {
 }
 
 .text-box {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: lighter;
   width: 100%;
 }
 
@@ -235,6 +238,7 @@ h6 {
 }
 
 .middle-name {
+  color: var(--dark-light);
   font-weight: 400;
 }
 
@@ -252,7 +256,7 @@ h6 {
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   position: relative;
 }
 
@@ -382,8 +386,6 @@ nav ul li a {
   display: flex;
   align-items: center;
 }
-
-
 
 .whoami {
   display: flex;
@@ -520,7 +522,7 @@ svg {
   background-color: var(--main-bg-color);
 }
 
-.foot div.endereco-social {
+.foot div.social-media {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -529,13 +531,11 @@ svg {
   justify-content: space-around;
 }
 
-.foot div.endereco-social h3 {
+.foot div.social-media h3 {
   color: var(--text-colored);
 }
 
-/*========================================================================================================
-================================================================================================================
-===============================*/
+/*MEDIA QUERIES*/
 
 @media only screen and (max-width: 1024px) {
   .text-box {
@@ -575,12 +575,7 @@ svg {
   }
 }
 
-/*MEDIA QUERIES ===========================================
-========================================================== ===================================================
-=================================================================================================
-==========================================================
-
-*/
+/*MEDIA QUERIES*/
 
 @media only screen and (min-width: 650px) {
   .text-box h1 {
@@ -599,7 +594,7 @@ svg {
   }
   h1 {
     color: var(--text);
-    font-size: 2.3em;
+    font-size: 1.8em;
     line-height: 1.18em;
     font-weight: 400;
   }
@@ -884,14 +879,14 @@ svg {
     font-size: 1em;
   }
 
-  .foot div.endereco-social {
+  .foot div.social-media {
     display: flex;
     flex-direction: row;
     background-color: #fff;
     color: black;
   }
 
-  .foot div.endereco-social h3 {
+  .foot div.social-media h3 {
     color: var(--dark-light);
   }
 
@@ -931,9 +926,7 @@ svg {
   }
 }
 
-
-/* HIRE-ME*/
-
+/*Curriculum*/
 
 .curriculum {
   height: fit-content;
@@ -941,9 +934,10 @@ svg {
   text-align: left;
 }
 
-.img-curriculum {
-  padding-top: 2em;
-  width: inherit;
+.pdf-curriculum {
+  padding-top: 4em;
+  height: 60em;
+  width: 100%;
 }
 
 .header-curriculum {

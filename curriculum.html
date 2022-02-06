@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8a234aa519.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="./images/old.png">
@@ -13,36 +14,43 @@
 
 <body class="roll">
 
-        <header class="header-curriculum">
-            <div class="logo">
+    <header class="header-curriculum">
+        <div class="logo">
+            <a href="index.html">
                 <h2 class="main-name">Marcio</h2>
+            </a>
+            <a href="index.html">
                 <h2 class="middle-name">Souza</h2>
-            </div>
-            <nav>
-                <a class="hide-desktop" href="#">
-                    <img src="./images/menu-aberto.svg" id="menu" class="menu" alt="toggle menu">
-                </a>
+            </a>
 
-                <ul id="nav" class="show-desktop hide-mobile">
-                    <li id="exit" class="exit-btn hide-desktop">X</li>
-                    <li><a href="index.html">De volta a Home</a></li>
-                </ul>
-            </nav>
-        </header>
+        </div>
+        <nav>
+            <a class="hide-desktop" href="#">
+                <img src="./images/menu-aberto.svg" id="menu" class="menu" alt="toggle menu">
+            </a>
+
+            <ul id="nav" class="show-desktop hide-mobile">
+                <li id="exit" class="exit-btn hide-desktop">X</li>
+                <li><a href="index.html">De volta a Home</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="curriculum">
         <div class="text-box">
-            <h6>Vamos conversar?</h6>
-            <h1>Este é meu currículo. Fique à vontade pra entrar em contato comigo.</h1>
-            <img class="img-curriculum" src="images/curriculum.png" alt="Currículo de Marcio Souza">
+            <h6>Sobre minhas experiências profissionais</h6>
+            <h1>Este é meu currículo, atualizado e disponível pra download. </h1>
+
+            <embed class="pdf-curriculum" src="./assets/curriculum.pdf#view=FitH">
         </div>
     </div>
 
-    <div  id="curriculum-foot" class="foot" >
-        <div class="endereco-social">
+    <div id="curriculum-foot" class="foot">
+        <div class="social-media">
             <div>
                 <h3>Social</h3>
                 <div class="social-box">
+                    <a href="https://twitter.com/MarcioBugado" target="blank"><i class="fa fa-twitter"></i></a>
                     <a href="https://www.linkedin.com/in/marcio-souza-0431bb105" target="blank"><i
                             class="fa fa-linkedin"></i></a>
                     <a href="https://github.com/marcioabsouza" target="blank"><i class="fa fa-github"></i></a>

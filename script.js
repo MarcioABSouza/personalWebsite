@@ -10,6 +10,9 @@ const toTop = document.getElementById("myBtn");
 const load = document.getElementById("myBtn");
 
 
+
+if(window.location.href.includes('index')){
+
 //PRELOADER
 if(preloader){
     window.addEventListener("load", () => {
@@ -30,14 +33,12 @@ if(preloader){
 
 let menuItens = document.querySelectorAll(".useScrollToSection");
 
-if(scroll){
     scroll.addEventListener("click", () => {
         window.scroll({
           top: 690,
           behavior: "smooth",
         });
       });
-}
 
 
 menu.addEventListener("click", function (e) {
@@ -52,12 +53,13 @@ exit.addEventListener("click", (e) => {
 
 //PHONE ANIMATION
 
-whoami.addEventListener("mouseover", () => {
-  phone.classList.add("animateLeftRight");
-  setTimeout(() => {
-    phoneText.classList.add("animateLeftRight");
-  }, 500);
-});
+    whoami.addEventListener("mouseover", () => {
+        phone.classList.add("animateLeftRight");
+        setTimeout(() => {
+          phoneText.classList.add("animateLeftRight");
+        }, 500);
+      });
+
 
 //SCROLL
 
@@ -100,11 +102,10 @@ var typed2 = new Typed("#forTypingPreloader", {
 
 var typed3 = new Typed("#findme", {
   strings: [
-    ' facilmente me chamar no <span class="main-color">Facebook</span>.',
-    ' ver os códigos dos projetos no <span class="main-color">Github</span>.',
+    ' ver meu código em projetos no <span class="main-color">Github</span>.',
     ' me enviar uma mensagem no  <span class="main-color">Whatsapp</span>.',
     ' dar uma olhada no meu perfil no  <span class="main-color">Linkedin</span>.',
-    ' ou me enviar um email em <span class="main-color">marciosouzaprofissional@gmail.com</span>',
+    ' me chamar no <span class="main-color">Twitter</span>.'
   ],
 
   typeSpeed: 10,
@@ -136,4 +137,7 @@ function topFunction() {
     top: 0,
     behavior: "smooth",
   });
+}
+
+
 }
