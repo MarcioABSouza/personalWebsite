@@ -8,7 +8,11 @@ const phoneText = document.querySelector("#Text");
 const whoami = document.querySelector(".whoami");
 const toTop = document.getElementById("myBtn");
 const load = document.getElementById("myBtn");
+const download = document.querySelector("#download-curriculum");
+
 const indexPage = document.querySelector("#index");
+const curriculumPage = document.querySelector("#curriculum");
+
 
 if (indexPage) {
   //PRELOADER
@@ -126,6 +130,15 @@ if (indexPage) {
       behavior: "smooth",
     });
   }
+}
+
+
+if(curriculumPage){
+    download.addEventListener('click',()=>{
+        download.target = '_blank'
+        download.href = './assets/curriculum.pdf'
+        window
+    })
 }
 
 //Toogle Menu

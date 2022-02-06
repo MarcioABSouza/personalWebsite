@@ -41,7 +41,13 @@
             <h6>Sobre minhas experiências profissionais</h6>
             <h1>Este é meu currículo, atualizado e disponível pra download. </h1>
 
-            <embed class="pdf-curriculum" src="./assets/curriculum.pdf#view=FitH">
+            <!-- <embed class="pdf-curriculum" src="./assets/curriculum.pdf#view=FitH"></embed> -->
+            <object data="./assets/curriculum.pdf#view=FitH" type="application/pdf" class="pdf-curriculum">
+                <p id="pdf-unsuported">Seu browser não suporta PDF. Clique
+                 <a id="download-curriculum" class="second-color">aqui</a>
+                 para baixar o arquivo.
+                </p> 
+            </object>
         </div>
     </div>
 
@@ -62,8 +68,7 @@
     </div>
 
     <div class="final-line">
-        <h6>Todos os direitos reservados - </h6>
-        <h6 id="rights"> Criado por <span class="second-color">Marcio Souza</span> </h6>
+        <h6 id="rights">Todos os direitos reservados - Criado por <span class="second-color">Marcio Souza</span> </h6>
     </div>
     <script src="script.js"></script>
 </body>
