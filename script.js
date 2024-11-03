@@ -95,9 +95,7 @@ if (indexPage) {
   var typed3 = new Typed("#findme", {
     strings: [
       ' ver meu código em projetos no <span class="main-color">Github</span>.',
-      ' me enviar uma mensagem no  <span class="main-color">Whatsapp</span>.',
-      ' dar uma olhada no meu perfil no  <span class="main-color">Linkedin</span>.',
-      ' me chamar no <span class="main-color">Twitter</span>.',
+      ' dar uma olhada no meu perfil no  <span class="main-color">Linkedin</span>.'
     ],
 
     typeSpeed: 10,
